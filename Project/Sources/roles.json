@@ -1,0 +1,45 @@
+{
+	"permissions": {
+		"allowed": []
+	},
+	"privileges": [
+		{
+			"id": "f8vRSNyQH8K64EubWYBp42",
+			"privilege": "high",
+			"includes": []
+		},
+		{
+			"id": "gonXGRyFEA6got2cUpTXTr",
+			"privilege": "medium",
+			"includes": []
+		},
+		{
+			"id": "4Kj2FPFh8HsTEWzf8y12di",
+			"privilege": "simple",
+			"includes": []
+		}
+	],
+	"roles": [
+		{
+			"id": "aza2LmmiaKLbLgTbsYegjf",
+			"role": "Employee",
+			"privileges": [
+				"simple"
+			]
+		},
+		{
+			"id": "qyKA6kw51HTFCnAcpCLzu8",
+			"role": "Marketing",
+			"privileges": [
+				"medium"
+			]
+		},
+		{
+			"id": "4xiVCvk7pNSxfALL8VvFzm",
+			"role": "Manager",
+			"privileges": [
+				"high"
+			]
+		}
+	]
+}

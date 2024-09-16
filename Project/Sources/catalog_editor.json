@@ -1,0 +1,64 @@
+{
+	"tables": {
+		"Customers": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 640,
+				"top": 40,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		},
+		"Users": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 356,
+				"top": 43,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		},
+		"INFO": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 115,
+				"top": 13,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6,
+			"fields_ordering": 2,
+			"fields": {
+				"PageNumber": {
+					"position": 2
+				},
+				"TabTitle": {
+					"position": 3
+				},
+				"Description": {
+					"position": 4
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		}
+	}
+}

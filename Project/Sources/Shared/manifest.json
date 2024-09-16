@@ -1,0 +1,34 @@
+{
+  "applicationName": "States demo",
+  "description": "A demo demonstrating the power of states to handle dynamic UI.",
+  "details": "Follow the steps of the demo to discover how to handle states",
+  "visuals": [
+    {
+      "description": "States",
+      "image": "/$shared/visuals/visual_1.png"
+    },
+    {
+      "description": "Manual states",
+      "image": "/$shared/visuals/visual_2.png"
+    },
+    {
+      "description": "Conditional states (1)",
+      "image": "/$shared/visuals/visual_3.png"
+    },
+    {
+      "description": "Conditional states (2)",
+      "image": "/$shared/visuals/visual_4.png"
+    }
+  ],
+  "logo": {
+    "small": "logo_small_path",
+    "large": "/$shared/logos/Q-2.svg"
+  },
+  "qodlyVersion": "all",
+  "author": {
+    "name": "Qodly",
+    "url": "https://www.qodly.com/"
+  },
+  "category": "Qodly starters",
+  "language": "English"
+}

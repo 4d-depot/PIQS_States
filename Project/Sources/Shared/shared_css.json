@@ -1,0 +1,10 @@
+{
+	"classes": [
+		{
+			"name": "demoButton",
+			"content": "self {\n\tcursor: pointer;\n  \tbackground-image: linear-gradient(to right, #cc75ca , #6a36ca);\n}\nself:hover {\n\topacity: 0.8;\n}\nself:active {\n\topacity: 1;\n}",
+			"parentId": null,
+			"id": "RCAEFZ73JivG7CZXBlumw"
+		}
+	]
+}

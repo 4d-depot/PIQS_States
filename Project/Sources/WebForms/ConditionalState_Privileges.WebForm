@@ -408,7 +408,7 @@
 					"justifyContent": "flex-start"
 				},
 				"classNames": [
-					"cartStyle_2"
+					"cartStyle"
 				]
 			},
 			"displayName": "Stylebox",

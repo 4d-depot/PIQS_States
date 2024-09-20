@@ -327,7 +327,7 @@
 					"width": "40%"
 				},
 				"classNames": [
-					"cartStyle_2"
+					"cartStyle"
 				]
 			},
 			"displayName": "Stylebox",

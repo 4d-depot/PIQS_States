@@ -1430,7 +1430,7 @@
 					"alignItems": "center"
 				},
 				"classNames": [
-					"cartStyle_2"
+					"cartStyle"
 				]
 			},
 			"displayName": "Stylebox",

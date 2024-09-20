@@ -1,962 +1,990 @@
 {
-  "metadata": {
-    "v": "1.0",
-    "datasources": [],
-    "styles": [
-      {
-        "name": "rotating",
-        "content": "@keyframes pulse {\n  from { transform: scale(0.8); }\n  to { transform: scale(1.2); }\n}\n\nself {\n  animation: pulse 1s infinite ease-in-out alternate;\n}",
-        "parentId": null,
-        "id": "qBIxYf7rm-JkpqbHiAWwu",
-        "scope": "local"
-      }
-    ],
-    "states": [
-      {
-        "label": "Base",
-        "id": "root"
-      },
-      {
-        "label": "Hello",
-        "id": "9vZTT8UKW6mCFwLF2b9iLT"
-      },
-      {
-        "label": "World",
-        "id": "ghaa77NVCtvdgdeEAx5y8J"
-      }
-    ],
-    "defaultStates": [
-      "9vZTT8UKW6mCFwLF2b9iLT"
-    ]
-  },
-  "components": {
-    "ROOT": {
-      "type": {
-        "resolvedName": "Container"
-      },
-      "isCanvas": true,
-      "props": {
-        "classNames": [],
-        "events": [],
-        "airyMode": true,
-        "className": "bg-white h-full w-full px-6",
-        "style": {
-          "display": "flex",
-          "marginLeft": "0px",
-          "flexDirection": "column",
-          "paddingTop": "0px"
-        }
-      },
-      "displayName": "Page",
-      "custom": {},
-      "parent": "",
-      "hidden": false,
-      "nodes": [
-        "m9LzD93WYi",
-        "843O85u_wD"
-      ],
-      "linkedNodes": {}
-    },
-    "mRP137oOkI": {
-      "type": {
-        "resolvedName": "Button"
-      },
-      "isCanvas": false,
-      "props": {
-        "text": "Hello",
-        "classNames": [
-          "demoButton"
-        ],
-        "events": [
-          {
-            "type": "simple-action",
-            "id": "oQdAetkRB8PiQymsrVEK9W",
-            "events": [
-              "onclick"
-            ],
-            "action": "",
-            "actionType": "state",
-            "datasource": {
-              "name": ""
-            },
-            "state": {
-              "action": "delete",
-              "states": [
-                "9vZTT8UKW6mCFwLF2b9iLT"
-              ]
-            }
-          },
-          {
-            "type": "simple-action",
-            "id": "ezjvLWQWFKnyBBVUVgbSvk",
-            "events": [
-              "onclick"
-            ],
-            "action": "",
-            "actionType": "state",
-            "datasource": {
-              "name": ""
-            },
-            "state": {
-              "action": "add",
-              "states": [
-                "ghaa77NVCtvdgdeEAx5y8J"
-              ]
-            }
-          }
-        ],
-        "iconPosition": "right",
-        "style": {
-          "display": "flex",
-          "width": "200px",
-          "justifyContent": "space-around",
-          "height": "80px",
-          "fontSize": "20px"
-        }
-      },
-      "displayName": "Button",
-      "custom": {
-        "states:ghaa77NVCtvdgdeEAx5y8J": {
-          "iconPosition": "hidden"
-        }
-      },
-      "parent": "ImU11_5UJQ",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {
-        "icon": "kNolci7yTY"
-      }
-    },
-    "kNolci7yTY": {
-      "type": {
-        "resolvedName": "Icon"
-      },
-      "isCanvas": false,
-      "props": {
-        "classNames": [
-          "rotating"
-        ],
-        "events": [],
-        "style": {
-          "marginTop": "0px",
-          "marginRight": "0px",
-          "marginBottom": "0px",
-          "marginLeft": "0px"
-        },
-        "icon": "fa-solid fa-hand-pointer"
-      },
-      "displayName": "Icon",
-      "custom": {},
-      "parent": "mRP137oOkI",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "i0tupFzLir": {
-      "type": {
-        "resolvedName": "Button"
-      },
-      "isCanvas": false,
-      "props": {
-        "text": "World",
-        "classNames": [
-          "demoButton"
-        ],
-        "events": [
-          {
-            "type": "simple-action",
-            "id": "pfjHmy3bAXceJeusv6dzHf",
-            "events": [
-              "onclick"
-            ],
-            "action": "",
-            "actionType": "state",
-            "datasource": {
-              "name": ""
-            },
-            "state": {
-              "action": "add",
-              "states": [
-                "9vZTT8UKW6mCFwLF2b9iLT"
-              ]
-            }
-          },
-          {
-            "type": "simple-action",
-            "id": "ezjvLWQWFKnyBBVUVgbSvk",
-            "events": [
-              "onclick"
-            ],
-            "action": "",
-            "actionType": "state",
-            "datasource": {
-              "name": ""
-            },
-            "state": {
-              "action": "delete",
-              "states": [
-                "ghaa77NVCtvdgdeEAx5y8J"
-              ]
-            }
-          }
-        ],
-        "iconPosition": "right",
-        "style": {
-          "display": "flex",
-          "width": "200px",
-          "justifyContent": "space-around",
-          "height": "80px",
-          "fontSize": "20px"
-        }
-      },
-      "displayName": "Button",
-      "custom": {
-        "states:9vZTT8UKW6mCFwLF2b9iLT": {
-          "style": {
-            "display": "none"
-          }
-        }
-      },
-      "parent": "ImU11_5UJQ",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {
-        "icon": "hnhcZtUBKn"
-      }
-    },
-    "hnhcZtUBKn": {
-      "type": {
-        "resolvedName": "Icon"
-      },
-      "isCanvas": false,
-      "props": {
-        "classNames": [
-          "rotating"
-        ],
-        "events": [],
-        "style": {
-          "marginTop": "0px",
-          "marginRight": "0px",
-          "marginBottom": "0px",
-          "marginLeft": "0px"
-        },
-        "icon": "fa-solid fa-hand-pointer"
-      },
-      "displayName": "Icon",
-      "custom": {},
-      "parent": "i0tupFzLir",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "oESKHCctg0": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "style": {
-          "display": "flex",
-          "justifyContent": "flex-start",
-          "alignItems": "center",
-          "flexDirection": "column",
-          "gap": "20px",
-          "width": "30%"
-        },
-        "iterableChild": true,
-        "classNames": [
-          "cartStyle"
-        ]
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "843O85u_wD",
-      "hidden": false,
-      "nodes": [
-        "xT4Oi7y1TA",
-        "IICrxtMVFo"
-      ],
-      "linkedNodes": {}
-    },
-    "m9LzD93WYi": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "Manual states",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          }
-        ],
-        "datasource": "",
-        "style": {
-          "fontSize": "20px",
-          "marginLeft": "36px",
-          "marginRight": "0px",
-          "marginBottom": "0px",
-          "marginTop": "0px",
-          "fontFamily": "Roboto",
-          "textAlign": "center",
-          "width": "fit-content",
-          "backgroundColor": "#226aa4",
-          "color": "#ffffffff",
-          "paddingLeft": "30px",
-          "paddingRight": "30px",
-          "borderRadius": "25px",
-          "borderTopRightRadius": "25px",
-          "borderBottomRightRadius": "25px",
-          "display": "flex",
-          "alignItems": "center",
-          "fontWeight": "300",
-          "paddingTop": "4px",
-          "paddingBottom": "4px"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "ROOT",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "IICrxtMVFo": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "In this example you can learn what a page state is.",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ""
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "This page has two states:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ""
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "- "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "Hello"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ": on this state the World button is hidden"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ""
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "- "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "World"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ": on this state the World button is displayed"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ""
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "On this example, the states Hello and World are enabled / disabled "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "manually"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": " thanks to "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "Standard actions"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ". "
-              }
-            ]
-          }
-        ],
-        "datasource": "",
-        "style": {
-          "marginLeft": "0px",
-          "marginRight": "0px",
-          "marginBottom": "0px",
-          "marginTop": "0px",
-          "fontFamily": "Roboto",
-          "fontSize": "16px",
-          "textAlign": "start"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Text",
-      "custom": {
-        "states:ghaa77NVCtvdgdeEAx5y8J": {
-          "doc": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "In this example you can learn what a page state is.",
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "This page has two states:"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "- "
-                },
-                {
-                  "bold": true,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "Hello"
-                },
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ": on this state the World button is hidden"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "- "
-                },
-                {
-                  "bold": true,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "World"
-                },
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ": on this state the World button is displayed"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "On this example, the states Hello and World are enabled / disabled "
-                },
-                {
-                  "bold": true,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "manually"
-                },
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": " thanks to "
-                },
-                {
-                  "bold": true,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "Standard actions"
-                },
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ". "
-                }
-              ]
-            }
-          ],
-          "datasource": ""
-        },
-        "states:9vZTT8UKW6mCFwLF2b9iLT": {
-          "doc": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "In this example you can learn what a page state is.",
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "This page has two states:"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "- "
-                },
-                {
-                  "bold": true,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "Hello"
-                },
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ": on this state the World button is hidden"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "- "
-                },
-                {
-                  "bold": true,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "World"
-                },
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ": on this state the World button is displayed"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "On this example, the states Hello and World are enabled / disabled "
-                },
-                {
-                  "bold": true,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "manually"
-                },
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": " thanks to "
-                },
-                {
-                  "bold": true,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": "Standard actions"
-                },
-                {
-                  "bold": false,
-                  "italic": false,
-                  "underlined": false,
-                  "strikethrough": false,
-                  "text": ". "
-                }
-              ]
-            }
-          ],
-          "datasource": ""
-        }
-      },
-      "parent": "oESKHCctg0",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "ImU11_5UJQ": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "style": {
-          "width": "70%",
-          "alignItems": "center"
-        },
-        "classNames": [
-          "cartStyle"
-        ]
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "843O85u_wD",
-      "hidden": false,
-      "nodes": [
-        "QmlRI-tyvk",
-        "mRP137oOkI",
-        "i0tupFzLir"
-      ],
-      "linkedNodes": {}
-    },
-    "843O85u_wD": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "style": {
-          "display": "flex"
-        }
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "ROOT",
-      "hidden": false,
-      "nodes": [
-        "oESKHCctg0",
-        "ImU11_5UJQ"
-      ],
-      "linkedNodes": {}
-    },
-    "xT4Oi7y1TA": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "THEORY",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          }
-        ],
-        "datasource": "",
-        "style": {
-          "fontSize": "20px",
-          "fontWeight": "500"
-        }
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "oESKHCctg0",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "QmlRI-tyvk": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "PRACTISING",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          }
-        ],
-        "datasource": "",
-        "style": {
-          "fontWeight": "500",
-          "fontSize": "20px"
-        }
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "ImU11_5UJQ",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    }
-  }
+	"metadata": {
+		"v": "1.0",
+		"datasources": [],
+		"styles": [
+			{
+				"name": "rotating",
+				"content": "@keyframes pulse {\n  from { transform: scale(0.8); }\n  to { transform: scale(1.2); }\n}\n\nself {\n  animation: pulse 1s infinite ease-in-out alternate;\n}",
+				"parentId": null,
+				"id": "qBIxYf7rm-JkpqbHiAWwu",
+				"scope": "local"
+			}
+		],
+		"states": [
+			{
+				"label": "Base",
+				"id": "root"
+			},
+			{
+				"label": "Hello",
+				"id": "9vZTT8UKW6mCFwLF2b9iLT"
+			},
+			{
+				"label": "World",
+				"id": "ghaa77NVCtvdgdeEAx5y8J"
+			}
+		],
+		"defaultStates": [
+			"9vZTT8UKW6mCFwLF2b9iLT"
+		]
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"airyMode": true,
+				"className": "bg-white h-full w-full px-6",
+				"style": {
+					"display": "flex",
+					"marginLeft": "0px",
+					"flexDirection": "column",
+					"paddingTop": "0px"
+				}
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"m9LzD93WYi",
+				"843O85u_wD"
+			],
+			"linkedNodes": {}
+		},
+		"mRP137oOkI": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Hello",
+				"classNames": [
+					"demoButton"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "oQdAetkRB8PiQymsrVEK9W",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"9vZTT8UKW6mCFwLF2b9iLT"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "ezjvLWQWFKnyBBVUVgbSvk",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"ghaa77NVCtvdgdeEAx5y8J"
+							]
+						}
+					}
+				],
+				"iconPosition": "right",
+				"style": {
+					"display": "flex",
+					"width": "200px",
+					"justifyContent": "space-around",
+					"height": "80px",
+					"fontSize": "20px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:ghaa77NVCtvdgdeEAx5y8J": {
+					"iconPosition": "hidden"
+				}
+			},
+			"parent": "ImU11_5UJQ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "kNolci7yTY"
+			}
+		},
+		"kNolci7yTY": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [
+					"rotating"
+				],
+				"events": [],
+				"style": {
+					"marginTop": "0px",
+					"marginRight": "0px",
+					"marginBottom": "0px",
+					"marginLeft": "0px"
+				},
+				"icon": "fa-solid fa-hand-pointer"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "mRP137oOkI",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"i0tupFzLir": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "World",
+				"classNames": [
+					"demoButton"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "pfjHmy3bAXceJeusv6dzHf",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"9vZTT8UKW6mCFwLF2b9iLT"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "ezjvLWQWFKnyBBVUVgbSvk",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"ghaa77NVCtvdgdeEAx5y8J"
+							]
+						}
+					}
+				],
+				"iconPosition": "right",
+				"style": {
+					"display": "flex",
+					"width": "200px",
+					"justifyContent": "space-around",
+					"height": "80px",
+					"fontSize": "20px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:9vZTT8UKW6mCFwLF2b9iLT": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "ImU11_5UJQ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "hnhcZtUBKn"
+			}
+		},
+		"hnhcZtUBKn": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [
+					"rotating"
+				],
+				"events": [],
+				"style": {
+					"marginTop": "0px",
+					"marginRight": "0px",
+					"marginBottom": "0px",
+					"marginLeft": "0px"
+				},
+				"icon": "fa-solid fa-hand-pointer"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "i0tupFzLir",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"oESKHCctg0": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"justifyContent": "flex-start",
+					"alignItems": "center",
+					"flexDirection": "column",
+					"gap": "20px",
+					"width": "30%"
+				},
+				"iterableChild": true,
+				"classNames": [
+					"cartStyle"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "843O85u_wD",
+			"hidden": false,
+			"nodes": [
+				"xT4Oi7y1TA",
+				"IICrxtMVFo"
+			],
+			"linkedNodes": {}
+		},
+		"m9LzD93WYi": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Manual states",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"marginLeft": "36px",
+					"marginRight": "0px",
+					"marginBottom": "0px",
+					"marginTop": "0px",
+					"fontFamily": "Roboto",
+					"textAlign": "center",
+					"width": "fit-content",
+					"backgroundColor": "#226aa4",
+					"color": "#ffffffff",
+					"paddingLeft": "30px",
+					"paddingRight": "30px",
+					"borderRadius": "25px",
+					"borderTopRightRadius": "25px",
+					"borderBottomRightRadius": "25px",
+					"display": "flex",
+					"alignItems": "center",
+					"fontWeight": "300",
+					"paddingTop": "4px",
+					"paddingBottom": "4px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"IICrxtMVFo": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "In this example, you'll learn about a page state.",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "This page has two states:"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "- "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "Hello"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ": in this state, the World button is hidden"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "- "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "World"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ": in this state, the World button is displayed"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "In this example, the Hello and World states are enabled / disabled "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "manually"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " thanks to "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "Standard actions"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ". "
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"marginLeft": "0px",
+					"marginRight": "0px",
+					"marginBottom": "0px",
+					"marginTop": "0px",
+					"fontFamily": "Roboto",
+					"fontSize": "16px",
+					"textAlign": "start"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {
+				"states:ghaa77NVCtvdgdeEAx5y8J": {
+					"doc": [
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"text": "In this example, you'll learn about a page state.",
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ""
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "This page has two states:"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ""
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "- "
+								},
+								{
+									"bold": true,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "Hello"
+								},
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ": in this state, the World button is hidden"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ""
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "- "
+								},
+								{
+									"bold": true,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "World"
+								},
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ": in this state, the World button is displayed"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ""
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "In this example, the Hello and World states are enabled / disabled "
+								},
+								{
+									"bold": true,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "manually"
+								},
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": " thanks to "
+								},
+								{
+									"bold": true,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "Standard actions"
+								},
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ". "
+								}
+							]
+						}
+					],
+					"datasource": ""
+				},
+				"states:9vZTT8UKW6mCFwLF2b9iLT": {
+					"doc": [
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"text": "In this example, you'll learn about a page state.",
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ""
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "This page has two states:"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ""
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "- "
+								},
+								{
+									"bold": true,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "Hello"
+								},
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ": in this state, the World button is hidden"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ""
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "- "
+								},
+								{
+									"bold": true,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "World"
+								},
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ": in this state, the World button is displayed"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ""
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "In this example, the Hello and World states are enabled / disabled "
+								},
+								{
+									"bold": true,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "manually"
+								},
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": " thanks to "
+								},
+								{
+									"bold": true,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": "Standard actions"
+								},
+								{
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false,
+									"text": ". "
+								}
+							]
+						}
+					],
+					"datasource": ""
+				}
+			},
+			"parent": "oESKHCctg0",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"ImU11_5UJQ": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"width": "30%",
+					"alignItems": "center",
+					"display": "flex",
+					"justifyContent": "flex-start",
+					"flexDirection": "column"
+				},
+				"classNames": [
+					"cartStyle"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "843O85u_wD",
+			"hidden": false,
+			"nodes": [
+				"QmlRI-tyvk",
+				"mRP137oOkI",
+				"i0tupFzLir"
+			],
+			"linkedNodes": {}
+		},
+		"843O85u_wD": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"oESKHCctg0",
+				"ImU11_5UJQ"
+			],
+			"linkedNodes": {}
+		},
+		"xT4Oi7y1TA": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "THEORY",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"fontWeight": "500"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "oESKHCctg0",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"QmlRI-tyvk": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "PRACTISING",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontWeight": "500",
+					"fontSize": "20px",
+					"textAlign": "center"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "ImU11_5UJQ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
 }

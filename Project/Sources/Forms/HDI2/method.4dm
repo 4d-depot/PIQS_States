@@ -8,7 +8,7 @@ Case of
 		
 		InitInfo
 		
-		Form:C1466.qodlyURL:="Click here to run this demo with Qodly studio"
+		Form:C1466.qodlyURL:="Click here to run the demo with Qodly studio"
 		
 End case 
 

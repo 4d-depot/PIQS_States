@@ -1,1457 +1,1469 @@
 {
-  "metadata": {
-    "v": "1.0",
-    "datasources": [
-      {
-        "id": "products",
-        "type": "entitysel",
-        "dataclass": "product",
-        "namespace": "",
-        "initialValue": "all",
-        "depth": null,
-        "pageSize": 100
-      },
-      {
-        "id": "theProduct",
-        "type": "entity",
-        "dataclass": "product",
-        "from": "products",
-        "namespace": "",
-        "initialValue": "first",
-        "depth": null
-      }
-    ],
-    "styles": [
-      {
-        "name": "matrixStyle",
-        "content": "self .FdVirtualGrid > div .selected {\n\nbackground-color: #d2e2f9;\n\nborder-radius : 15px;\n\n}",
-        "parentId": null,
-        "id": "UJA4pUXm3HY6nOYgQMcoh"
-      }
-    ],
-    "states": [
-      {
-        "label": "Base",
-        "id": "root"
-      },
-      {
-        "label": "ReadOnly",
-        "id": "fXzuQaXjeAJAJCJgF7C6FA",
-        "conditions": {
-          "id": "mewg9N2uaHcwATrdLopzti",
-          "type": "datasource",
-          "name": "condition",
-          "value": "",
-          "valueType": "hardCoded",
-          "path": "theProduct.updatable",
-          "dsType": "bool",
-          "op": "isfalse"
-        }
-      },
-      {
-        "label": "Update",
-        "id": "6c9Hz2Q43L2Fm3kUzmWyL1",
-        "conditions": {
-          "id": "42m7QYhqqnupadzuSXgf7g",
-          "type": "datasource",
-          "name": "condition",
-          "value": "",
-          "valueType": "hardCoded",
-          "path": "theProduct.updatable",
-          "dsType": "bool",
-          "op": "istrue"
-        }
-      }
-    ],
-    "defaultStates": [
-      "siTCDbdkJkLKe1VMBByEyi",
-      "qhNg8n3pwG4pKxHWLakm5g"
-    ]
-  },
-  "components": {
-    "ROOT": {
-      "type": {
-        "resolvedName": "Container"
-      },
-      "isCanvas": true,
-      "props": {
-        "classNames": [],
-        "events": [],
-        "airyMode": true,
-        "className": "bg-white h-full w-full px-6",
-        "style": {
-          "marginTop": "0px",
-          "marginLeft": "0px",
-          "display": "flex",
-          "flexDirection": "column",
-          "paddingTop": "0px"
-        }
-      },
-      "displayName": "Page",
-      "custom": {},
-      "parent": "",
-      "hidden": false,
-      "nodes": [
-        "8xqzIV1gbc",
-        "3Udzl4bNfj"
-      ],
-      "linkedNodes": {}
-    },
-    "RhqTfQjGD-": {
-      "type": {
-        "resolvedName": "Matrix"
-      },
-      "isCanvas": false,
-      "props": {
-        "orientation": "vertical",
-        "iterable": true,
-        "classNames": [
-          "matrixStyle"
-        ],
-        "events": [],
-        "style": {
-          "borderWidth": "0px",
-          "width": "390px",
-          "justifyContent": "center",
-          "alignItems": "start",
-          "height": "600px",
-          "marginLeft": "0px"
-        },
-        "datasource": "products",
-        "gridProps": {
-          "styleboxWidth": 390,
-          "styleboxHeight": 100,
-          "styleboxPercentWidth": "",
-          "enableMosaic": false
-        },
-        "currentElement": "theProduct"
-      },
-      "displayName": "Matrix",
-      "custom": {
-        "states:sMZW6N9xiYNcmRG2QWiYgR": {
-          "gridProps": {
-            "styleboxWidth": 380,
-            "styleboxHeight": 100,
-            "styleboxPercentWidth": "",
-            "enableMosaic": false
-          }
-        },
-        "states:oLfhC7TTQS3uPeXWyDUuze": {
-          "gridProps": {
-            "styleboxWidth": 380,
-            "styleboxHeight": 100,
-            "styleboxPercentWidth": "",
-            "enableMosaic": false
-          }
-        },
-        "states:fXzuQaXjeAJAJCJgF7C6FA": {
-          "gridProps": {
-            "styleboxWidth": 510,
-            "styleboxHeight": 100,
-            "styleboxPercentWidth": "",
-            "enableMosaic": false
-          }
-        },
-        "states:6c9Hz2Q43L2Fm3kUzmWyL1": {
-          "gridProps": {
-            "styleboxWidth": 510,
-            "styleboxHeight": 100,
-            "styleboxPercentWidth": "",
-            "enableMosaic": false
-          }
-        }
-      },
-      "parent": "Kkp-mDFaM8",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {
-        "container": "PYGpuHZG06"
-      }
-    },
-    "PYGpuHZG06": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "style": {
-          "display": "flex",
-          "alignItems": "center",
-          "marginTop": "0px",
-          "marginRight": "0px",
-          "marginBottom": "0px",
-          "marginLeft": "0px",
-          "paddingTop": "0px",
-          "paddingRight": "0px",
-          "paddingBottom": "0px",
-          "paddingLeft": "0px",
-          "width": "390px",
-          "justifyContent": "center",
-          "maxWidth": "390px",
-          "minHeight": "40px",
-          "maxHeight": "100px",
-          "height": "100px"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "RhqTfQjGD-",
-      "hidden": false,
-      "nodes": [
-        "TwXXI_tLvw"
-      ],
-      "linkedNodes": {}
-    },
-    "CSPL-38zhu": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "id": "text",
-        "datasource": "$This.name",
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": ""
-              },
-              {
-                "type": "datasource",
-                "datasource": "$This.name",
-                "children": [
-                  {
-                    "text": "$This.name"
-                  }
-                ],
-                "dsType": "string",
-                "format": ""
-              },
-              {
-                "text": " "
-              }
-            ]
-          }
-        ],
-        "style": {
-          "width": "140px"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "TwXXI_tLvw",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "iDsHw-2gpT": {
-      "type": {
-        "resolvedName": "Image"
-      },
-      "isCanvas": false,
-      "props": {
-        "classNames": [],
-        "events": [],
-        "style": {
-          "width": "80px",
-          "height": "80px",
-          "borderRadius": "50%"
-        },
-        "id": "image",
-        "datasource": "$This.picture"
-      },
-      "displayName": "Image",
-      "custom": {},
-      "parent": "TwXXI_tLvw",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "TwXXI_tLvw": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "style": {
-          "display": "flex",
-          "alignItems": "center",
-          "backgroundColor": "#f5f3ef",
-          "borderRadius": "15px",
-          "paddingTop": "5px",
-          "paddingRight": "5px",
-          "paddingBottom": "5px",
-          "height": "90px",
-          "width": "360px",
-          "maxWidth": "360px",
-          "maxHeight": "90px",
-          "marginTop": "0px",
-          "marginRight": "0px",
-          "marginBottom": "0px",
-          "marginLeft": "0px",
-          "fontSize": "16px",
-          "justifyContent": "flex-start"
-        }
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "PYGpuHZG06",
-      "hidden": false,
-      "nodes": [
-        "CSPL-38zhu",
-        "K28NRcJ_F6",
-        "iDsHw-2gpT"
-      ],
-      "linkedNodes": {}
-    },
-    "tcIceyXgbG": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "style": {
-          "display": "flex",
-          "alignItems": "center",
-          "flexDirection": "column",
-          "gap": "20px",
-          "width": "40%"
-        },
-        "classNames": [
-          "cartStyle_2"
-        ]
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "3Udzl4bNfj",
-      "hidden": false,
-      "nodes": [
-        "NVUo8sEKFT",
-        "38xyLlQNKH"
-      ],
-      "linkedNodes": {}
-    },
-    "jQWBn-T8uJ": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "style": {
-          "display": "flex",
-          "flexDirection": "column",
-          "alignItems": "center",
-          "backgroundColor": "#f5f3ef",
-          "borderRadius": "15px",
-          "marginTop": "60px",
-          "justifyContent": "flex-start",
-          "fontSize": "16px",
-          "marginLeft": "0px",
-          "width": "300px"
-        }
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "xih3VVU_5w",
-      "hidden": false,
-      "nodes": [
-        "D8h2Dv_qyB",
-        "puZkB-kej7"
-      ],
-      "linkedNodes": {}
-    },
-    "puZkB-kej7": {
-      "type": {
-        "resolvedName": "Button"
-      },
-      "isCanvas": false,
-      "props": {
-        "text": "Save",
-        "classNames": [],
-        "events": [
-          {
-            "type": "simple-action",
-            "id": "wJf52PMXgrhj5sagG42XCG",
-            "events": [
-              "onclick"
-            ],
-            "action": "save",
-            "actionType": "datasource",
-            "datasource": {
-              "name": "theProduct",
-              "type": "entity",
-              "from": "products",
-              "namespace": ""
-            },
-            "state": {}
-          }
-        ],
-        "iconPosition": "hidden",
-        "style": {
-          "display": "flex",
-          "backgroundColor": "#f7ce46",
-          "fontWeight": "500",
-          "fontSize": "20px",
-          "height": "40px"
-        }
-      },
-      "displayName": "Button",
-      "custom": {
-        "states:fXzuQaXjeAJAJCJgF7C6FA": {
-          "style": {
-            "display": "none"
-          }
-        }
-      },
-      "parent": "jQWBn-T8uJ",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {
-        "icon": "sTAmtdHWkA"
-      }
-    },
-    "sTAmtdHWkA": {
-      "type": {
-        "resolvedName": "Icon"
-      },
-      "isCanvas": false,
-      "props": {
-        "classNames": [],
-        "events": [],
-        "icon": "fa-regular fa-star"
-      },
-      "displayName": "Icon",
-      "custom": {},
-      "parent": "puZkB-kej7",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "D8h2Dv_qyB": {
-      "type": {
-        "resolvedName": "TextInput"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "placeholder": "placeholder",
-        "label": "label",
-        "labelPosition": "left",
-        "iterableChild": true,
-        "style": {}
-      },
-      "displayName": "Text Input",
-      "custom": {},
-      "parent": "jQWBn-T8uJ",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {
-        "label": "pz4TqQY16w",
-        "input": "ZnA9j0a1d2"
-      }
-    },
-    "pz4TqQY16w": {
-      "type": {
-        "resolvedName": "Label"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "moveable": false,
-        "text": "Name",
-        "style": {},
-        "deletable": true
-      },
-      "displayName": "Label",
-      "custom": {},
-      "parent": "D8h2Dv_qyB",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "ZnA9j0a1d2": {
-      "type": {
-        "resolvedName": "Input"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "deletable": false,
-        "className": "w-full bg-transparent",
-        "type": "text",
-        "datasource": "theProduct.name",
-        "moveable": false,
-        "placeholder": ""
-      },
-      "displayName": "Input",
-      "custom": {
-        "states:fXzuQaXjeAJAJCJgF7C6FA": {
-          "disabled": true
-        }
-      },
-      "parent": "D8h2Dv_qyB",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "Kkp-mDFaM8": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "style": {
-          "paddingLeft": "0px",
-          "paddingRight": "0px",
-          "marginLeft": "0px",
-          "marginTop": "0px",
-          "paddingTop": "0px",
-          "maxWidth": "390px"
-        }
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "38xyLlQNKH",
-      "hidden": false,
-      "nodes": [
-        "YL9YxSh21r",
-        "w2WAvK5bwW",
-        "RhqTfQjGD-"
-      ],
-      "linkedNodes": {}
-    },
-    "YL9YxSh21r": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "style": {
-          "backgroundColor": "#226aa4",
-          "color": "#ffffffff",
-          "borderTopLeftRadius": "12px",
-          "borderTopRightRadius": "12px",
-          "fontWeight": "300",
-          "marginLeft": "0px",
-          "marginTop": "0px",
-          "marginRight": "0px",
-          "fontFamily": "Poppins",
-          "width": "390px"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "Kkp-mDFaM8",
-      "hidden": false,
-      "nodes": [
-        "PCdepMObL6"
-      ],
-      "linkedNodes": {}
-    },
-    "PCdepMObL6": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "PRODUCTS",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          }
-        ],
-        "datasource": "",
-        "style": {
-          "fontSize": "20px",
-          "fontWeight": "300",
-          "marginTop": "12px",
-          "marginRight": "20px",
-          "marginBottom": "12px",
-          "marginLeft": "20px",
-          "fontFamily": "Roboto",
-          "textAlign": "center"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "YL9YxSh21r",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "xih3VVU_5w": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "style": {
-          "marginTop": "0px",
-          "paddingTop": "0px",
-          "display": "flex",
-          "flexDirection": "column",
-          "width": "fit-content"
-        }
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "38xyLlQNKH",
-      "hidden": false,
-      "nodes": [
-        "UaVqUfA2or",
-        "jQWBn-T8uJ"
-      ],
-      "linkedNodes": {}
-    },
-    "UaVqUfA2or": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "style": {
-          "backgroundColor": "#226aa4",
-          "color": "#ffffffff",
-          "borderTopLeftRadius": "12px",
-          "borderTopRightRadius": "12px",
-          "fontWeight": "300",
-          "marginLeft": "0px",
-          "marginTop": "0px",
-          "marginRight": "0px",
-          "fontFamily": "Poppins",
-          "width": "300px"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "xih3VVU_5w",
-      "hidden": false,
-      "nodes": [
-        "xEmYIZ_qLw"
-      ],
-      "linkedNodes": {}
-    },
-    "xEmYIZ_qLw": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "PRODUCT DETAILS",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          }
-        ],
-        "datasource": "",
-        "style": {
-          "fontSize": "20px",
-          "fontWeight": "300",
-          "marginTop": "12px",
-          "marginRight": "20px",
-          "marginBottom": "12px",
-          "marginLeft": "20px",
-          "fontFamily": "Roboto",
-          "textAlign": "center"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "UaVqUfA2or",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "DIr9Myi8kH": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "style": {
-          "display": "flex",
-          "justifyContent": "flex-start",
-          "alignItems": "center",
-          "flexDirection": "column",
-          "gap": "20px",
-          "width": "30%"
-        },
-        "iterableChild": true,
-        "classNames": [
-          "cartStyle"
-        ]
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "3Udzl4bNfj",
-      "hidden": false,
-      "nodes": [
-        "krQNSGH3Ip",
-        "drnWilBEpT"
-      ],
-      "linkedNodes": {}
-    },
-    "8xqzIV1gbc": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "Conditional states (Qodly sources)",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          }
-        ],
-        "datasource": "",
-        "style": {
-          "fontSize": "20px",
-          "marginLeft": "36px",
-          "marginRight": "0px",
-          "marginBottom": "0px",
-          "marginTop": "0px",
-          "fontFamily": "Roboto",
-          "textAlign": "center",
-          "width": "fit-content",
-          "backgroundColor": "#226aa4",
-          "color": "#ffffffff",
-          "paddingLeft": "30px",
-          "paddingRight": "30px",
-          "borderRadius": "25px",
-          "borderTopRightRadius": "25px",
-          "borderBottomRightRadius": "25px",
-          "display": "flex",
-          "alignItems": "center",
-          "fontWeight": "300",
-          "paddingTop": "4px",
-          "paddingBottom": "4px"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "ROOT",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "drnWilBEpT": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "In this example you can learn how to bind a state to a condition. In this case, the state is enabled or disabled dynamically according to evaluating the condition as TRUE or FALSE.",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ""
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "On the Product Details section, the product name is updatable if the Product attribute "
-              },
-              {
-                "bold": false,
-                "italic": true,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "updatable"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": " is True."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ""
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "This page has two states:"
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ""
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "- "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "strikethrough": false,
-                "text": "ReadOnly"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ": on this state the "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "name"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": " text input is "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "disabled"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": " and the "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "Save"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": " button "
-              },
-              {
-                "underlined": false,
-                "strikethrough": false,
-                "text": "is "
-              },
-              {
-                "underlined": false,
-                "strikethrough": false,
-                "text": "hidden.",
-                "bold": true
-              },
-              {
-                "underlined": false,
-                "strikethrough": false,
-                "text": " This state is enabled if the condition "
-              },
-              {
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "theProduct.updatable is false."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ""
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "- "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "strikethrough": false,
-                "text": "Update"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ": on this state the "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "name"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": " text input is "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "enabled"
-              },
-              {
-                "underlined": false,
-                "strikethrough": false,
-                "text": " and the "
-              },
-              {
-                "underlined": false,
-                "strikethrough": false,
-                "text": "Save",
-                "bold": true
-              },
-              {
-                "underlined": false,
-                "strikethrough": false,
-                "text": " button is "
-              },
-              {
-                "underlined": false,
-                "strikethrough": false,
-                "text": "displayed. ",
-                "bold": true
-              },
-              {
-                "underlined": false,
-                "strikethrough": false,
-                "text": "This state is enabled if the condition "
-              },
-              {
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "theProduct.updatable is true."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ""
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "Select a product and try to update its name."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ""
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "The states ReadOnly and Update are enabled "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "dynamically"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": " thanks to "
-              },
-              {
-                "bold": true,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": "conditions"
-              },
-              {
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false,
-                "text": ". "
-              }
-            ]
-          }
-        ],
-        "datasource": "",
-        "style": {
-          "marginLeft": "0px",
-          "marginRight": "0px",
-          "marginBottom": "0px",
-          "marginTop": "0px",
-          "fontFamily": "Roboto",
-          "fontSize": "16px",
-          "textAlign": "start"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "DIr9Myi8kH",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "K28NRcJ_F6": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "id": "text",
-        "datasource": "$This.updatable",
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": ""
-              },
-              {
-                "type": "datasource",
-                "datasource": "$This.updatable",
-                "children": [
-                  {
-                    "text": "upd"
-                  }
-                ],
-                "dsType": "bool",
-                "format": ""
-              },
-              {
-                "text": " "
-              }
-            ]
-          }
-        ],
-        "style": {
-          "width": "80px"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "TwXXI_tLvw",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "w2WAvK5bwW": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "style": {
-          "display": "flex",
-          "alignItems": "center",
-          "fontSize": "16px",
-          "paddingBottom": "0px",
-          "paddingLeft": "5px",
-          "fontWeight": "500",
-          "width": "390px"
-        },
-        "iterableChild": true
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "Kkp-mDFaM8",
-      "hidden": false,
-      "nodes": [
-        "Z47mZUgGQa",
-        "PRzru1ZYPX",
-        "CG___SpDAt"
-      ],
-      "linkedNodes": {}
-    },
-    "Z47mZUgGQa": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "style": {
-          "marginBottom": "0px",
-          "width": "130px",
-          "marginLeft": "0px"
-        },
-        "iterableChild": true,
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "Name",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          }
-        ],
-        "datasource": ""
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "w2WAvK5bwW",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "PRzru1ZYPX": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "style": {
-          "marginBottom": "0px",
-          "width": "100px"
-        },
-        "iterableChild": true,
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "Updatable",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          }
-        ],
-        "datasource": ""
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "w2WAvK5bwW",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "CG___SpDAt": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "style": {
-          "marginBottom": "0px"
-        },
-        "iterableChild": true,
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "Photo",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          }
-        ],
-        "datasource": ""
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "w2WAvK5bwW",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "3Udzl4bNfj": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "style": {
-          "display": "flex",
-          "justifyContent": "flex-start"
-        }
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "ROOT",
-      "hidden": false,
-      "nodes": [
-        "DIr9Myi8kH",
-        "tcIceyXgbG"
-      ],
-      "linkedNodes": {}
-    },
-    "krQNSGH3Ip": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "THEORY",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          }
-        ],
-        "datasource": "",
-        "style": {
-          "fontSize": "20px",
-          "fontWeight": "500"
-        }
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "DIr9Myi8kH",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "NVUo8sEKFT": {
-      "type": {
-        "resolvedName": "Text"
-      },
-      "isCanvas": false,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "doc": [
-          {
-            "type": "paragraph",
-            "children": [
-              {
-                "text": "PRACTISING",
-                "bold": false,
-                "italic": false,
-                "underlined": false,
-                "strikethrough": false
-              }
-            ]
-          }
-        ],
-        "datasource": "",
-        "style": {
-          "fontWeight": "500",
-          "fontSize": "20px"
-        }
-      },
-      "displayName": "Text",
-      "custom": {},
-      "parent": "tcIceyXgbG",
-      "hidden": false,
-      "nodes": [],
-      "linkedNodes": {}
-    },
-    "38xyLlQNKH": {
-      "type": {
-        "resolvedName": "StyleBox"
-      },
-      "isCanvas": true,
-      "props": {
-        "events": [],
-        "iterableChild": true,
-        "style": {
-          "display": "flex",
-          "flexDirection": "row",
-          "paddingLeft": "0px",
-          "marginLeft": "12px",
-          "width": "100%",
-          "marginTop": "0px",
-          "paddingTop": "0px"
-        }
-      },
-      "displayName": "Stylebox",
-      "custom": {},
-      "parent": "tcIceyXgbG",
-      "hidden": false,
-      "nodes": [
-        "Kkp-mDFaM8",
-        "xih3VVU_5w"
-      ],
-      "linkedNodes": {}
-    }
-  }
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "products",
+				"type": "entitysel",
+				"dataclass": "product",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "theProduct",
+				"type": "entity",
+				"dataclass": "product",
+				"from": "products",
+				"namespace": "",
+				"initialValue": "first",
+				"depth": null
+			}
+		],
+		"styles": [
+			{
+				"name": "matrixStyle",
+				"content": "self .FdVirtualGrid > div .selected {\n\nbackground-color: #d2e2f9;\n\nborder-radius : 15px;\n\n}",
+				"parentId": null,
+				"id": "UJA4pUXm3HY6nOYgQMcoh"
+			}
+		],
+		"states": [
+			{
+				"label": "Base",
+				"id": "root"
+			},
+			{
+				"label": "ReadOnly",
+				"id": "fXzuQaXjeAJAJCJgF7C6FA",
+				"conditions": {
+					"id": "mewg9N2uaHcwATrdLopzti",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "theProduct.updatable",
+					"dsType": "bool",
+					"op": "isfalse"
+				}
+			},
+			{
+				"label": "Update",
+				"id": "6c9Hz2Q43L2Fm3kUzmWyL1",
+				"conditions": {
+					"id": "42m7QYhqqnupadzuSXgf7g",
+					"type": "datasource",
+					"name": "condition",
+					"value": "",
+					"valueType": "hardCoded",
+					"path": "theProduct.updatable",
+					"dsType": "bool",
+					"op": "istrue"
+				}
+			}
+		],
+		"defaultStates": [
+			"siTCDbdkJkLKe1VMBByEyi",
+			"qhNg8n3pwG4pKxHWLakm5g"
+		]
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"airyMode": true,
+				"className": "bg-white h-full w-full px-6",
+				"style": {
+					"marginTop": "0px",
+					"marginLeft": "0px",
+					"display": "flex",
+					"flexDirection": "column",
+					"paddingTop": "0px"
+				}
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"8xqzIV1gbc",
+				"3Udzl4bNfj"
+			],
+			"linkedNodes": {}
+		},
+		"RhqTfQjGD-": {
+			"type": {
+				"resolvedName": "Matrix"
+			},
+			"isCanvas": false,
+			"props": {
+				"orientation": "vertical",
+				"iterable": true,
+				"classNames": [
+					"matrixStyle"
+				],
+				"events": [],
+				"style": {
+					"borderWidth": "0px",
+					"width": "390px",
+					"justifyContent": "center",
+					"alignItems": "start",
+					"height": "600px",
+					"marginLeft": "0px"
+				},
+				"datasource": "products",
+				"gridProps": {
+					"styleboxWidth": 390,
+					"styleboxHeight": 100,
+					"styleboxPercentWidth": "",
+					"enableMosaic": false
+				},
+				"currentElement": "theProduct"
+			},
+			"displayName": "Matrix",
+			"custom": {
+				"states:sMZW6N9xiYNcmRG2QWiYgR": {
+					"gridProps": {
+						"styleboxWidth": 380,
+						"styleboxHeight": 100,
+						"styleboxPercentWidth": "",
+						"enableMosaic": false
+					}
+				},
+				"states:oLfhC7TTQS3uPeXWyDUuze": {
+					"gridProps": {
+						"styleboxWidth": 380,
+						"styleboxHeight": 100,
+						"styleboxPercentWidth": "",
+						"enableMosaic": false
+					}
+				},
+				"states:fXzuQaXjeAJAJCJgF7C6FA": {
+					"gridProps": {
+						"styleboxWidth": 510,
+						"styleboxHeight": 100,
+						"styleboxPercentWidth": "",
+						"enableMosaic": false
+					}
+				},
+				"states:6c9Hz2Q43L2Fm3kUzmWyL1": {
+					"gridProps": {
+						"styleboxWidth": 510,
+						"styleboxHeight": 100,
+						"styleboxPercentWidth": "",
+						"enableMosaic": false
+					}
+				}
+			},
+			"parent": "Kkp-mDFaM8",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"container": "PYGpuHZG06"
+			}
+		},
+		"PYGpuHZG06": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"alignItems": "center",
+					"marginTop": "0px",
+					"marginRight": "0px",
+					"marginBottom": "0px",
+					"marginLeft": "0px",
+					"paddingTop": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingLeft": "0px",
+					"width": "390px",
+					"justifyContent": "center",
+					"maxWidth": "390px",
+					"minHeight": "40px",
+					"maxHeight": "100px",
+					"height": "100px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "RhqTfQjGD-",
+			"hidden": false,
+			"nodes": [
+				"TwXXI_tLvw"
+			],
+			"linkedNodes": {}
+		},
+		"CSPL-38zhu": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"id": "text",
+				"datasource": "$This.name",
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "$This.name",
+								"children": [
+									{
+										"text": "$This.name"
+									}
+								],
+								"dsType": "string",
+								"format": ""
+							},
+							{
+								"text": " "
+							}
+						]
+					}
+				],
+				"style": {
+					"width": "140px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "TwXXI_tLvw",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"iDsHw-2gpT": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"width": "80px",
+					"height": "80px",
+					"borderRadius": "50%"
+				},
+				"id": "image",
+				"datasource": "$This.picture"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "TwXXI_tLvw",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"TwXXI_tLvw": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"alignItems": "center",
+					"backgroundColor": "#f5f3ef",
+					"borderRadius": "15px",
+					"paddingTop": "5px",
+					"paddingRight": "5px",
+					"paddingBottom": "5px",
+					"height": "90px",
+					"width": "360px",
+					"maxWidth": "360px",
+					"maxHeight": "90px",
+					"marginTop": "0px",
+					"marginRight": "0px",
+					"marginBottom": "0px",
+					"marginLeft": "0px",
+					"fontSize": "16px",
+					"justifyContent": "flex-start"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "PYGpuHZG06",
+			"hidden": false,
+			"nodes": [
+				"CSPL-38zhu",
+				"K28NRcJ_F6",
+				"iDsHw-2gpT"
+			],
+			"linkedNodes": {}
+		},
+		"tcIceyXgbG": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"alignItems": "center",
+					"flexDirection": "column",
+					"gap": "20px",
+					"width": "40%"
+				},
+				"classNames": [
+					"cartStyle_2"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "3Udzl4bNfj",
+			"hidden": false,
+			"nodes": [
+				"NVUo8sEKFT",
+				"38xyLlQNKH"
+			],
+			"linkedNodes": {}
+		},
+		"jQWBn-T8uJ": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"alignItems": "center",
+					"backgroundColor": "#f5f3ef",
+					"borderRadius": "15px",
+					"marginTop": "60px",
+					"justifyContent": "flex-start",
+					"fontSize": "16px",
+					"marginLeft": "0px",
+					"width": "300px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "xih3VVU_5w",
+			"hidden": false,
+			"nodes": [
+				"D8h2Dv_qyB",
+				"puZkB-kej7"
+			],
+			"linkedNodes": {}
+		},
+		"puZkB-kej7": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Save",
+				"classNames": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "wJf52PMXgrhj5sagG42XCG",
+						"events": [
+							"onclick"
+						],
+						"action": "save",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "theProduct",
+							"type": "entity",
+							"from": "products",
+							"namespace": ""
+						},
+						"state": {}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex",
+					"backgroundColor": "#f7ce46",
+					"fontWeight": "500",
+					"fontSize": "20px",
+					"height": "40px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {
+				"states:fXzuQaXjeAJAJCJgF7C6FA": {
+					"style": {
+						"display": "none"
+					}
+				}
+			},
+			"parent": "jQWBn-T8uJ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "sTAmtdHWkA"
+			}
+		},
+		"sTAmtdHWkA": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "puZkB-kej7",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"D8h2Dv_qyB": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "left",
+				"iterableChild": true,
+				"style": {}
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "jQWBn-T8uJ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "pz4TqQY16w",
+				"input": "ZnA9j0a1d2"
+			}
+		},
+		"pz4TqQY16w": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Name",
+				"style": {},
+				"deletable": true
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "D8h2Dv_qyB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"ZnA9j0a1d2": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "w-full bg-transparent",
+				"type": "text",
+				"datasource": "theProduct.name",
+				"moveable": false,
+				"placeholder": ""
+			},
+			"displayName": "Input",
+			"custom": {
+				"states:fXzuQaXjeAJAJCJgF7C6FA": {
+					"disabled": true
+				}
+			},
+			"parent": "D8h2Dv_qyB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Kkp-mDFaM8": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"paddingLeft": "0px",
+					"paddingRight": "0px",
+					"marginLeft": "0px",
+					"marginTop": "0px",
+					"paddingTop": "0px",
+					"maxWidth": "390px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "38xyLlQNKH",
+			"hidden": false,
+			"nodes": [
+				"YL9YxSh21r",
+				"w2WAvK5bwW",
+				"RhqTfQjGD-"
+			],
+			"linkedNodes": {}
+		},
+		"YL9YxSh21r": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"backgroundColor": "#226aa4",
+					"color": "#ffffffff",
+					"borderTopLeftRadius": "12px",
+					"borderTopRightRadius": "12px",
+					"fontWeight": "300",
+					"marginLeft": "0px",
+					"marginTop": "0px",
+					"marginRight": "0px",
+					"fontFamily": "Poppins",
+					"width": "390px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "Kkp-mDFaM8",
+			"hidden": false,
+			"nodes": [
+				"PCdepMObL6"
+			],
+			"linkedNodes": {}
+		},
+		"PCdepMObL6": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "PRODUCTS",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"fontWeight": "300",
+					"marginTop": "12px",
+					"marginRight": "20px",
+					"marginBottom": "12px",
+					"marginLeft": "20px",
+					"fontFamily": "Roboto",
+					"textAlign": "center"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "YL9YxSh21r",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"xih3VVU_5w": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"marginTop": "0px",
+					"paddingTop": "0px",
+					"display": "flex",
+					"flexDirection": "column",
+					"width": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "38xyLlQNKH",
+			"hidden": false,
+			"nodes": [
+				"UaVqUfA2or",
+				"jQWBn-T8uJ"
+			],
+			"linkedNodes": {}
+		},
+		"UaVqUfA2or": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"backgroundColor": "#226aa4",
+					"color": "#ffffffff",
+					"borderTopLeftRadius": "12px",
+					"borderTopRightRadius": "12px",
+					"fontWeight": "300",
+					"marginLeft": "0px",
+					"marginTop": "0px",
+					"marginRight": "0px",
+					"fontFamily": "Poppins",
+					"width": "300px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "xih3VVU_5w",
+			"hidden": false,
+			"nodes": [
+				"xEmYIZ_qLw"
+			],
+			"linkedNodes": {}
+		},
+		"xEmYIZ_qLw": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "PRODUCT DETAILS",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"fontWeight": "300",
+					"marginTop": "12px",
+					"marginRight": "20px",
+					"marginBottom": "12px",
+					"marginLeft": "20px",
+					"fontFamily": "Roboto",
+					"textAlign": "center"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "UaVqUfA2or",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"DIr9Myi8kH": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"justifyContent": "flex-start",
+					"alignItems": "center",
+					"flexDirection": "column",
+					"gap": "20px",
+					"width": "30%"
+				},
+				"iterableChild": true,
+				"classNames": [
+					"cartStyle"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "3Udzl4bNfj",
+			"hidden": false,
+			"nodes": [
+				"krQNSGH3Ip",
+				"drnWilBEpT"
+			],
+			"linkedNodes": {}
+		},
+		"8xqzIV1gbc": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Conditional states (Qodly sources)",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"marginLeft": "36px",
+					"marginRight": "0px",
+					"marginBottom": "0px",
+					"marginTop": "0px",
+					"fontFamily": "Roboto",
+					"textAlign": "center",
+					"width": "fit-content",
+					"backgroundColor": "#226aa4",
+					"color": "#ffffffff",
+					"paddingLeft": "30px",
+					"paddingRight": "30px",
+					"borderRadius": "25px",
+					"borderTopRightRadius": "25px",
+					"borderBottomRightRadius": "25px",
+					"display": "flex",
+					"alignItems": "center",
+					"fontWeight": "300",
+					"paddingTop": "4px",
+					"paddingBottom": "4px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"drnWilBEpT": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "In this example, you'll learn how to bind a state to a condition. ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "The state is dynamically enabled or disabled based on wether the condition evaluates as TRUE or FALSE.",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "In the Product Details section, the product name is updatable if the Product attribute "
+							},
+							{
+								"bold": false,
+								"italic": true,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "updatable"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " is set to True."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "This page has two states:"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "- "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"strikethrough": false,
+								"text": "ReadOnly"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ": in this state the "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "name"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " text input is "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "disabled"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " and the "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "Save"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " button "
+							},
+							{
+								"underlined": false,
+								"strikethrough": false,
+								"text": "is "
+							},
+							{
+								"underlined": false,
+								"strikethrough": false,
+								"text": "hidden.",
+								"bold": true
+							},
+							{
+								"underlined": false,
+								"strikethrough": false,
+								"text": " This state is enabled if the condition "
+							},
+							{
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "theProduct.updatable is false."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "- "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"strikethrough": false,
+								"text": "Update"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ": in this state the "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "name"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " text input is "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "enabled"
+							},
+							{
+								"underlined": false,
+								"strikethrough": false,
+								"text": " and the "
+							},
+							{
+								"underlined": false,
+								"strikethrough": false,
+								"text": "Save",
+								"bold": true
+							},
+							{
+								"underlined": false,
+								"strikethrough": false,
+								"text": " button is "
+							},
+							{
+								"underlined": false,
+								"strikethrough": false,
+								"text": "displayed. ",
+								"bold": true
+							},
+							{
+								"underlined": false,
+								"strikethrough": false,
+								"text": "This state is enabled if the condition "
+							},
+							{
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "theProduct.updatable is true."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "Select a product and try updating its name."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "The ReadOnly and Update states are "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "dynamically "
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "enabled  thanks to "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "conditions"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ". "
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"marginLeft": "0px",
+					"marginRight": "0px",
+					"marginBottom": "0px",
+					"marginTop": "0px",
+					"fontFamily": "Roboto",
+					"fontSize": "16px",
+					"textAlign": "start"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "DIr9Myi8kH",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"K28NRcJ_F6": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"id": "text",
+				"datasource": "$This.updatable",
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "$This.updatable",
+								"children": [
+									{
+										"text": "upd"
+									}
+								],
+								"dsType": "bool",
+								"format": ""
+							},
+							{
+								"text": " "
+							}
+						]
+					}
+				],
+				"style": {
+					"width": "80px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "TwXXI_tLvw",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"w2WAvK5bwW": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"alignItems": "center",
+					"fontSize": "16px",
+					"paddingBottom": "0px",
+					"paddingLeft": "5px",
+					"fontWeight": "500",
+					"width": "390px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "Kkp-mDFaM8",
+			"hidden": false,
+			"nodes": [
+				"Z47mZUgGQa",
+				"PRzru1ZYPX",
+				"CG___SpDAt"
+			],
+			"linkedNodes": {}
+		},
+		"Z47mZUgGQa": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"style": {
+					"marginBottom": "0px",
+					"width": "130px",
+					"marginLeft": "0px"
+				},
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Name",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": ""
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "w2WAvK5bwW",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"PRzru1ZYPX": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"style": {
+					"marginBottom": "0px",
+					"width": "100px"
+				},
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Updatable",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": ""
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "w2WAvK5bwW",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"CG___SpDAt": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"style": {
+					"marginBottom": "0px"
+				},
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Photo",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": ""
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "w2WAvK5bwW",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"3Udzl4bNfj": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"justifyContent": "flex-start"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"DIr9Myi8kH",
+				"tcIceyXgbG"
+			],
+			"linkedNodes": {}
+		},
+		"krQNSGH3Ip": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "THEORY",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"fontWeight": "500"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "DIr9Myi8kH",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"NVUo8sEKFT": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "PRACTISING",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontWeight": "500",
+					"fontSize": "20px"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "tcIceyXgbG",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"38xyLlQNKH": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"paddingLeft": "0px",
+					"marginLeft": "12px",
+					"width": "100%",
+					"marginTop": "0px",
+					"paddingTop": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "tcIceyXgbG",
+			"hidden": false,
+			"nodes": [
+				"Kkp-mDFaM8",
+				"xih3VVU_5w"
+			],
+			"linkedNodes": {}
+		}
+	}
 }

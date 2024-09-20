@@ -569,7 +569,7 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "Enable / disable states from the back end",
+								"text": "Enable / disable states from the back-end",
 								"bold": false,
 								"italic": false,
 								"underlined": false,

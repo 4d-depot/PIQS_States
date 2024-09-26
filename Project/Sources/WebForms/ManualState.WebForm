@@ -262,7 +262,7 @@
 					"alignItems": "center",
 					"flexDirection": "column",
 					"gap": "20px",
-					"width": "30%"
+					"width": "600px"
 				},
 				"iterableChild": true,
 				"classNames": [
@@ -872,7 +872,7 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"width": "30%",
+					"width": "fit-content",
 					"alignItems": "center",
 					"display": "flex",
 					"justifyContent": "flex-start",

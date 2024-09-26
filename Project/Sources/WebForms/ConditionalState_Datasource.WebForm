@@ -324,7 +324,7 @@
 					"alignItems": "center",
 					"flexDirection": "column",
 					"gap": "20px",
-					"width": "40%"
+					"width": "fit-content"
 				},
 				"classNames": [
 					"cartStyle"
@@ -714,7 +714,7 @@
 					"alignItems": "center",
 					"flexDirection": "column",
 					"gap": "20px",
-					"width": "30%"
+					"width": "600px"
 				},
 				"iterableChild": true,
 				"classNames": [

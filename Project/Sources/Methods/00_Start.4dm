@@ -34,7 +34,7 @@ Case of
 		$options.blog:="blog.4d.com"
 		$options.info:="Qodly studio for 4D"  //ex : "4D View Pro feature"
 		
-		$options.minimumVersion:="2070"  // 1660 means 16R6   1601 means 16.1 (do not use !)
+		$options.minimumVersion:="2060"  // 1660 means 16R6   1601 means 16.1 (do not use !)
 		
 		// $options.license:=4D View license  // IF ANY NEEDED
 		

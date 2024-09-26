@@ -1423,7 +1423,7 @@
 				"events": [],
 				"iterableChild": true,
 				"style": {
-					"width": "50%",
+					"width": "fit-content",
 					"display": "flex",
 					"flexDirection": "column",
 					"justifyContent": "center",
@@ -1440,6 +1440,7 @@
 			"nodes": [
 				"rQBnZcpIc0",
 				"hmSEFo_K1K",
+				"npKxCBrGDy",
 				"iPLbQk7y1V"
 			],
 			"linkedNodes": {}
@@ -1456,7 +1457,7 @@
 					"cartStyle"
 				],
 				"style": {
-					"width": "30%",
+					"width": "600px",
 					"alignItems": "center"
 				}
 			},
@@ -1537,6 +1538,142 @@
 			"displayName": "Text",
 			"custom": {},
 			"parent": "Zr3Q0ba4-Y",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"npKxCBrGDy": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"justifyContent": "flex-end",
+					"paddingBottom": "0px",
+					"marginBottom": "0px",
+					"paddingRight": "30px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "Zr3Q0ba4-Y",
+			"hidden": false,
+			"nodes": [
+				"msb5lvQHgk"
+			],
+			"linkedNodes": {}
+		},
+		"msb5lvQHgk": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Clear chosen products",
+				"classNames": [
+					"demoButton"
+				],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "eKjdXfwEPyF4xxsHUJYV2j",
+						"events": [
+							"onclick"
+						],
+						"action": "reset",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "choosenProducts",
+							"type": "entitysel",
+							"from": "",
+							"namespace": ""
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "p1abam3xwu8GZvGmL3wpUm",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"fGJFMns5DhK3wmtbXULLBg"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "oNSCa9sbHNmFEyZnX3M8R5",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"bcmaetVj3JSF4hyGGmLZfZ"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "fGXYyUSjbjTDcFMqaENNzV",
+						"events": [
+							"onclick"
+						],
+						"action": "reset",
+						"actionType": "datasource",
+						"datasource": {
+							"name": "totalPrice",
+							"type": "scalar",
+							"from": "",
+							"namespace": "",
+							"dataType": "number"
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex",
+					"marginBottom": "0px",
+					"marginRight": "0px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "npKxCBrGDy",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "z6FxrevI9n"
+			}
+		},
+		"z6FxrevI9n": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": []
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "msb5lvQHgk",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

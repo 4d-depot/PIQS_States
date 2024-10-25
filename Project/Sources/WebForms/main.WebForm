@@ -110,7 +110,7 @@
 			"isCanvas": false,
 			"props": {
 				"events": [],
-				"webform": "ManualState",
+				"webform": "NonConditional_States",
 				"style": {
 					"borderRadius": "12px",
 					"backgroundColor": "#ffffffff",
@@ -145,7 +145,7 @@
 						"loader": "gsIx0-qHbs",
 						"parent": "webform-loader",
 						"isHardCoded": true,
-						"target": "ManualState"
+						"target": "NonConditional_States"
 					}
 				],
 				"classNames": [
@@ -185,7 +185,7 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "Manual States",
+								"text": "Non-conditional States",
 								"bold": false,
 								"italic": false,
 								"underlined": false,

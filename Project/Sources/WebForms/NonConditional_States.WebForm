@@ -291,7 +291,7 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "Manual states",
+								"text": "Non-conditional states",
 								"bold": false,
 								"italic": false,
 								"underlined": false,
@@ -326,7 +326,25 @@
 				"iterableChild": true
 			},
 			"displayName": "Text",
-			"custom": {},
+			"custom": {
+				"states:ghaa77NVCtvdgdeEAx5y8J": {
+					"doc": [
+						{
+							"type": "paragraph",
+							"children": [
+								{
+									"text": "Non-conditional states",
+									"bold": false,
+									"italic": false,
+									"underlined": false,
+									"strikethrough": false
+								}
+							]
+						}
+					],
+					"datasource": ""
+				}
+			},
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [],
@@ -472,21 +490,7 @@
 								"italic": false,
 								"underlined": false,
 								"strikethrough": false,
-								"text": "In this example, the Hello and World states are enabled / disabled "
-							},
-							{
-								"bold": true,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false,
-								"text": "manually"
-							},
-							{
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false,
-								"text": " thanks to "
+								"text": "In this example, the Hello and World states are enabled / disabled thanks to "
 							},
 							{
 								"bold": true,
@@ -653,21 +657,7 @@
 									"italic": false,
 									"underlined": false,
 									"strikethrough": false,
-									"text": "In this example, the Hello and World states are enabled / disabled "
-								},
-								{
-									"bold": true,
-									"italic": false,
-									"underlined": false,
-									"strikethrough": false,
-									"text": "manually"
-								},
-								{
-									"bold": false,
-									"italic": false,
-									"underlined": false,
-									"strikethrough": false,
-									"text": " thanks to "
+									"text": "In this example, the Hello and World states are enabled / disabled thanks to "
 								},
 								{
 									"bold": true,
@@ -822,21 +812,7 @@
 									"italic": false,
 									"underlined": false,
 									"strikethrough": false,
-									"text": "In this example, the Hello and World states are enabled / disabled "
-								},
-								{
-									"bold": true,
-									"italic": false,
-									"underlined": false,
-									"strikethrough": false,
-									"text": "manually"
-								},
-								{
-									"bold": false,
-									"italic": false,
-									"underlined": false,
-									"strikethrough": false,
-									"text": " thanks to "
+									"text": "In this example, the Hello and World states are enabled / disabled thanks to "
 								},
 								{
 									"bold": true,

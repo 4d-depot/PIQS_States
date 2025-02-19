@@ -14,6 +14,6 @@ exposed Function getProductData()
 	
 	
 exposed Function initChosenProducts() : cs:C1710.productSelection
-	return This:C1470.newSelection(dk keep ordered:K85:11)
+	return This:C1470.newSelection()
 	
 	

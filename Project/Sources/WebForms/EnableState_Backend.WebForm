@@ -175,7 +175,7 @@
 				},
 				"datasource": "products",
 				"gridProps": {
-					"styleboxWidth": 380,
+					"styleboxWidth": 378,
 					"styleboxHeight": 100,
 					"styleboxPercentWidth": "",
 					"enableMosaic": false
@@ -917,13 +917,13 @@
 				},
 				"datasource": "choosenProducts",
 				"gridProps": {
-					"styleboxWidth": 360,
+					"styleboxWidth": 358,
 					"styleboxHeight": 100,
 					"styleboxPercentWidth": "",
 					"enableMosaic": false
 				},
 				"currentElement": "",
-				"disabled": true
+				"disabled": false
 			},
 			"displayName": "Matrix",
 			"custom": {
@@ -1591,6 +1591,23 @@
 							"type": "entitysel",
 							"from": "",
 							"namespace": ""
+						},
+						"disabled": true
+					},
+					{
+						"type": "method",
+						"dataclass": "product",
+						"events": [
+							"onclick"
+						],
+						"id": "1YQ1Ujq7g2oSWJBHQUJG1m",
+						"method": "ds.product.initChosenProducts",
+						"params": [],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "cs.productSelection",
+							"datasource": "choosenProducts"
 						}
 					},
 					{
@@ -1669,7 +1686,8 @@
 			"isCanvas": false,
 			"props": {
 				"classNames": [],
-				"events": []
+				"events": [],
+				"icon": "fa-regular fa-star"
 			},
 			"displayName": "Icon",
 			"custom": {},
